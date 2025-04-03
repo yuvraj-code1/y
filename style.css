@@ -1,0 +1,269 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navlist li {
+    margin: 0 20px;
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navlist a:hover, .navlist a.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 3px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+}
+
+/* About Section */
+.about, .hobbies, .projects, .contact {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.about h2, .hobbies h2, .projects h2, .contact h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Hobbies Section */
+.hobbies ul {
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.hobbies li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+    background:rgba(255, 255, 255, 0.1);;
+    color: #fff;
+    min-height: 100vh; /* Ensure full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-item {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    background:#1e1e2f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.project-item h2 {
+    color: #5DB9EE;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.project-item .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color:azure;
+    background: #5DB9EE;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.project-item .btn:hover {
+    background:yellowgreen;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        padding: 40px 10px;
+    }
+
+    .project-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project-item h2 {
+        font-size: 1.3rem;
+    }
+
+    .project-item p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Contact Section */
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic img {
+        margin-top: 50px;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+}
+/* Profile Picture Styling */
+.profile-pic {
+    display: flex;
+    justify-content: flex-start; /* Move to left */
+    align-items: center;
+    margin-left: -100px; /* Adjust as needed */
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    display: flex;
+    justify-content: flex-start; /* Aligns image to the left */
+    align-items: center;
+    margin-left: -500px; /* Adjust the left movement */
+}
+
+.profile-pic img {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image does not stretch */
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid #5DB9EE;
+    box-shadow: 
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877FF,
+        inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+}
