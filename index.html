@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvraj Gopchade</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navlist">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="home">
-        <div class="content">
-            <h1>Hi! I Am <span>Yuvraj Gopchade</span></h1>
-            <h2>Web Developer</h2>
-            <p>Creating modern and responsive websites with sleek designs.</p>
-            <div class="btn-container">
-                <a href="projects.html" class="btn">View Projects</a>
-                <a href="contact.html" class="btn">Hire Me</a>
-            </div>
-        </div>
-        <div class="profile-pic">
-            <img src="https://github.com/yuvraj-code1/portfolio-YG/blob/main/newphoto.jpg?raw=true" alt="Yuvraj">
-        </div>
-    </section>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="content">
+      <h1>Hi! I Am <span>Yuvraj Gopchade</span></h1>
+      <h2>Web Developer</h2>
+      <p>Creating modern and responsive websites with sleek designs.</p>
+      <div class="btn-container">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img src="image/newphoto.jpg" alt="Yuvraj" />
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate and dedicated Computer Engineering student at MIT Academy of Engineering (MITAOE), currently pursuing my B.Tech. Born in 2006, I have a keen interest in software development, problem-solving, and emerging technologies. I am continuously learning and improving my skills in programming, web development, and artificial intelligence.
+    </p>
+  </section>
+
+  <!-- HOBBIES SECTION -->
+  <section class="hobbies" id="hobbies">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li><strong>Web Development</strong> – Build websites and personal projects.</li>
+      <li><strong>Drawing & Digital Art</strong> – Sketch, paint, or create digital illustrations.</li>
+      <li><strong>Trekking & Hiking</strong> – Explore nature and adventure.</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+    <div class="project-item">
+      <h2>User Management Shell Script</h2>
+      <p>A script to manage user accounts and authentication.</p>
+      <a href="https://github.com/krishna-code1/project.sh/blob/main/user_management.sh" class="btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h2>TO DO LIST</h2>
+      <p>A simple and effective task management application.</p>
+      <a href="https://github.com/krishna-code1/newproject.sh/blob/main/project.sh" class="btn" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>📞 Phone: 8625021743</p>
+    <p>📧 Email: <a href="mailto:202401040087@mitaoe.ac.in">202401040149@mitaoe.ac.in</a></p>
+  </section>
+
 </body>
 </html>
